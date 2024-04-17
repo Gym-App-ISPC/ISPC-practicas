@@ -11,6 +11,11 @@ Proyecto Grupal para el Módulo Prácticas profesionalizantes del Instituto Supe
 * Repositorio de la Aplicación Web: Este repositorio contiene el código fuente del aplicación web Gym App https://github.com/PulpoI/proyecto-integrador-ISPC
 
 ## Hoja de ruta ✍
+* Actividades preparatorias -  08/04 al 15/04: 
+
+Involucrarse en un foro de debate y reagrupación de equipos.
+Registro de Grupos en formulario y documento de presentación proyecto.  
+
 * SPRINT 0 -17/04 al 26/04:  Publicar en tarea la planilla de relevamiento de continuidad de su proyecto. Análisis inicial de estado del mismo e informar como serán los avances. Recuperación de GitHub.
 * SPRINT 1 -29/04 al 13/05:: Desarrollo de mejoras sustanciales y superadoras de la aplicación web (Front, Back y API Rest con CRUD). Tener en cuenta las rúbricas.
 * SPRINT 2 -20/05 al 03/06: : Desarrollo de mejoras sustanciales y superadoras de la aplicación móvil (cinco o mas Activities con navegabilidad aplicando un CRUD). Tener en cuenta las rúbricas.
