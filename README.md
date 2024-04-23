@@ -36,10 +36,10 @@ Registro de Grupos en formulario y documento de presentación proyecto.
 Pódes encontrar mucho más información sobre este proyecto en nuestra [Wiki](https://enlace.tld "Wiki").
 
 ## Autores ✒
-* Carolina Medina - _Dev/Scrum Master_
+* Carolina Medina - _Dev_
 * Soledad Mattos - _Developer_
 * Pablo Duarte - _Developer_
-* Pedro Tarrago - _Developer_
+* Pedro Tarrago - _Developer/Scrum Master_
 * Franco Lorca - _Developer_
 * María Paula Tkaczuk - _Developer_
 
