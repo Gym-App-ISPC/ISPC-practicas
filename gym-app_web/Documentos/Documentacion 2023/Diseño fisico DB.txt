@@ -1,0 +1,78 @@
+CREATE TABLE [Admin] 
+(
+ [id]         bigint NOT NULL ,
+ [nombre]     varchar(50) NOT NULL ,
+ [email]     varchar(100) NOT NULL ,
+ [contraseña] varchar(50) NOT NULL ,
+
+PRIMARY KEY (id)
+);
+
+CREATE TABLE [Clase]
+(
+ [id]              bigint  NOT NULL ,
+ [nombre]          varchar(50) NOT NULL ,
+ [descripcion]     varchar(300) NOT NULL ,
+ [fecha]           date NOT NULL ,
+ [hora]            datetime  NOT NULL ,
+ [limite_cupos]     bigint NOT NULL ,
+ [cantidad_inscriptos]    bigint NOT NULL ,
+ [estado_clase]            varchar (30) NOT NULL ,
+
+
+ PRIMARY KEY (id)
+);
+
+
+CREATE TABLE [Cliente]
+(
+ [id]               bigint NOT NULL ,
+ [nombre]           varchar(50) NOT NULL ,
+ [apellido]         varchar(50) NOT NULL ,
+ [dni]              varchar(50) NOT NULL ,
+ [email]           varchar(100) NOT NULL ,
+ [contraseña]       varchar(50) NOT NULL ,
+ [fecha_nacimiento] date NOT NULL ,
+ [plan_id]          bigint NOT NULL ,
+ [clases_restantes]    bigint NOT NULL ,
+
+ PRIMARY KEY (id),
+ CONSTRAINT [FK_plan] FOREIGN KEY ([plan_id])  REFERENCES [Plan]([id])
+);
+
+
+CREATE TABLE [Orden]
+(
+ [id]         bigint NOT NULL ,
+ [precio]     bigint NOT NULL ,
+ [fecha]      date NULL ,
+ [cliente_id]     bigint NOT NULL ,
+ [plan_id]      bigint NOT NULL ,
+
+ 
+ CONSTRAINT [FK_cliente] FOREIGN KEY ([cliente_id])  REFERENCES [Cliente]([id]),
+ CONSTRAINT [FK_plan] FOREIGN KEY ([plan_id])  REFERENCES [plan]([id])
+);
+
+CREATE TABLE [Plan]
+(
+ [id]                  bigint NOT NULL ,
+ [nombre]              varchar(50) NOT NULL ,
+ [descripcion]         varchar(150) NOT NULL ,
+ [cantidad_clases]     bigint NOT NULL ,
+ [precio]              smallint  NOT NULL ,
+
+
+ PRIMARY KEY (id),
+);
+
+CREATE TABLE [Reserva]
+(
+ [id]         bigint NOT NULL ,
+ [clase_id] bigint NOT NULL ,
+ [cliente_id] bigint NOT NULL ,
+
+ PRIMARY KEY (id),
+ CONSTRAINT [FK_cliente] FOREIGN KEY ([cliente_id])  REFERENCES [Cliente]([id]),
+  CONSTRAINT [FK_clase] FOREIGN KEY ([clase_id])  REFERENCES [Clase]([id])
+);
