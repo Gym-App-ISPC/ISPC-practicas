@@ -19,7 +19,7 @@ import { CheckoutComponent } from './shop/checkout/checkout.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { LoginAdminComponent } from './roles/admin/login-admin/login-admin.component';
 import { ClienteComponent } from './roles/admin/views/cliente/cliente.component';
 import { PlanComponent } from './roles/admin/views/plan/plan.component';
@@ -27,12 +27,14 @@ import { CrearPlanComponent } from './roles/admin/views/crear-plan/crear-plan.co
 import { MiCuentaComponent } from './pages/perfil/mi-cuenta/mi-cuenta.component';
 import { CrearClaseComponent } from './roles/admin/views/crear-clase/crear-clase.component';
 import { ClaseComponent } from './roles/admin/views/clase/clase.component';
-import{MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { PlanesTiendaComponent } from './shop/planesTienda/planesTienda.component';
 import { PlanesComponent } from './pages/planes/planes.component';
 import { PlanesTiendaModule } from './shop/planesTienda/planesTienda.module';
 import { TiendaModule } from './shop/tienda/tienda.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
 
 import { CommonModule, CurrencyPipe } from '@angular/common';
 import { MisSuscripcionesComponent } from './pages/perfil/mis-suscripciones/mis-suscripciones.component';
@@ -44,7 +46,7 @@ import { AdminAuthGuard } from './service/auth/admin-auth-guard';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent, 
+    NavComponent,
     NosotrosComponent,
     HomeComponent,
     ClasesComponent,
@@ -65,22 +67,23 @@ import { AdminAuthGuard } from './service/auth/admin-auth-guard';
     ClaseComponent,
     MisSuscripcionesComponent,
     InscripcionClasesComponent,
-    
   ],
   imports: [
     RouterModule.forRoot([]),
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule, 
+    ReactiveFormsModule,
     HttpClientModule,
     TiendaModule,
     PlanesTiendaModule,
     CommonModule,
     MatTabsModule,
+    MatTableModule,
+    MatCardModule,
     BrowserAnimationsModule,
   ],
   providers: [CartService, CurrencyPipe, AdminAuthGuard, ClientAuthGuard],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

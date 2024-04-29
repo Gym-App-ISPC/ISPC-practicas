@@ -3,8 +3,15 @@
     <a class="navbar-brand m-0 p-0" routerLink="/">
       <div class="logo">GYM APP</div>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -31,39 +38,70 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown ml-auto" *ngIf="isAuthenticated">
-          <a class="nav-link dropdown-toggle text-danger" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a
+            class="nav-link dropdown-toggle text-danger"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
             MI CUENTA
           </a>
-          <div class="dropdown-menu dropdown-menu-end custom-dropdown" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="mi-cuenta" *ngIf="isAuthenticated && !isAdmin">Perfil</a>
-            <a class="dropdown-item" routerLink="/mis-suscripciones" *ngIf="isAuthenticated && !isAdmin">Mis
-              suscripciones</a>
-            <a class="dropdown-item" routerLink="/mis-clases" *ngIf="isAuthenticated && !isAdmin">Mis clases</a>
+          <div
+            class="dropdown-menu dropdown-menu-end custom-dropdown"
+            aria-labelledby="navbarDropdown"
+          >
+            <a
+              class="dropdown-item"
+              routerLink="mi-cuenta"
+              *ngIf="isAuthenticated && !isAdmin"
+              >Perfil</a
+            >
+            <a
+              class="dropdown-item"
+              routerLink="/mis-suscripciones"
+              *ngIf="isAuthenticated && !isAdmin"
+              >Mis suscripciones</a
+            >
+            <a
+              class="dropdown-item"
+              routerLink="/mis-clases"
+              *ngIf="isAuthenticated && !isAdmin"
+              >Mis clases</a
+            >
             <div class="dropdown-divider"></div>
-            <button class="dropdown-item" (click)="logout()">CERRAR SESION</button>
+            <button class="dropdown-item" (click)="logout()">
+              CERRAR SESION
+            </button>
           </div>
         </li>
         <li class="nav-item" *ngIf="!isAuthenticated">
           <a class="nav-link" routerLink="/login">
-            <button type="button"
-              class="btn btn-outline-danger me-2 border border-2 border-danger rounded-0 text-uppercase font-monospace">
+            <button
+              type="button"
+              class="btn btn-outline-danger me-2 border border-2 border-danger rounded-0 text-uppercase font-monospace"
+            >
               Inicia sesión
             </button>
           </a>
         </li>
         <li class="nav-item" *ngIf="!isAuthenticated">
           <a class="nav-link" routerLink="/registro">
-            <button type="button"
-              class="btn text-dark btn-danger link-light border border-2 border-danger rounded-0 text-uppercase font-monospace">
+            <button
+              type="button"
+              class="btn text-light btn-danger link-light border border-2 border-danger rounded-0 text-uppercase font-monospace"
+            >
               Registrate
             </button>
           </a>
         </li>
         <li class="nav-item" *ngIf="isAuthenticated && isAdmin">
           <a class="nav-link" routerLink="/dashboard">
-            <button type="button"
-              class="btn text-dark btn-danger link-light border border-2 border-danger rounded-0 text-uppercase font-monospace">
+            <button
+              type="button"
+              class="btn text-dark btn-danger link-light border border-2 border-danger rounded-0 text-uppercase font-monospace"
+            >
               Dashboard
             </button>
           </a>

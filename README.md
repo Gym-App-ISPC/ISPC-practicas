@@ -33,7 +33,7 @@ Registro de Grupos en formulario y documento de presentación proyecto.
 [Diseño de la App Mobile](https://enlace.tld "Diseño de la App Mobile").
 
 ### Wiki 📜
-Pódes encontrar mucho más información sobre este proyecto en nuestra [Wiki](https://enlace.tld "Wiki").
+Pódes encontrar mucho más información sobre este proyecto en nuestra [Wiki](https://github.com/Gym-App-ISPC/ISPC-practicas/wiki).
 
 ## Autores ✒
 * Carolina Medina - _Dev_
