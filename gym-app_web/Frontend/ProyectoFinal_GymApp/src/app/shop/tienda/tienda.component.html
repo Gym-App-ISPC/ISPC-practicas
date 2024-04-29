@@ -1,0 +1,13 @@
+<main>
+  <h1>BIENVENIDO A LA TIENDA GYMAPP</h1>
+  <button class="btn-carrito p-3" (click)="toggleCart()"><i class="fa-solid fa-cart-shopping fa-beat fa-2xl"></i></button>
+  <div class="planes">
+    <planes-tienda></planes-tienda>
+  </div>
+
+  <aside>
+    <div id="cart-container" [class.show]="isCartOpen" class="cart-container">
+      <cart></cart>
+    </div>
+  </aside>
+</main>
