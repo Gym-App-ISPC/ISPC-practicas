@@ -50,6 +50,7 @@ const routes: Routes = [
   {path:'crear-plan', component: CrearPlanComponent, canActivate: [AdminAuthGuard] },
   {path:'crear-clase', component: CrearClaseComponent, canActivate: [AdminAuthGuard] },
   {path:'clase/:id', component: ClaseComponent, canActivate: [AdminAuthGuard]},
+  { path: 'mensajes', component: ContactoComponent },
     {path:'**', component: HomeComponent},
 
 ];
