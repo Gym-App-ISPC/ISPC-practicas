@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 
-export interface PeriodicElement {
+export interface ClasesGYM {
   HORARIOS: string;
   LUNES: string;
   MARTES: string;
