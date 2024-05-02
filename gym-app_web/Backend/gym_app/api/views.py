@@ -2,12 +2,15 @@ from django.http.response import JsonResponse
 from django.utils.decorators import method_decorator
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
-from .models import Plan
+from django.shortcuts import render, redirect
+from django.views.decorators.csrf import csrf_exempt
+from .models import Mensaje, Plan
 from .models import Admin
 from .models import Cliente
 from .models import Clase
 from .models import Reserva
 from .models import Orden
+from .models import Mensaje
 import json
 
 # Create your views here.
@@ -549,3 +552,37 @@ class OrdenView(View):
       else:
         datos = {'mensaje': "No se encontró la orden..."} 
       return JsonResponse(datos)
+
+
+#MENSAJES
+@csrf_exempt
+def almacenar_mensaje(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        nombre = data.get('nombre')
+        email = data.get('email')
+        mensaje = data.get('mensaje')
+
+        # Guardar el mensaje en la base de datos
+        mensaje_obj = Mensaje.objects.create(nombre=nombre, email=email, mensaje=mensaje)
+
+        return JsonResponse({'mensaje': 'Mensaje almacenado correctamente'}, status=201)
+
+    return JsonResponse({'error': 'Solo se permiten solicitudes POST'}, status=400)
+
+
+from django.http import JsonResponse
+from .models import Mensaje
+
+def mostrar_mensajes(request):
+    mensajes = Mensaje.objects.all()
+    mensajes_json = []
+    for mensaje in mensajes:
+        mensaje_json = {
+            'nombre': mensaje.nombre,
+            'email': mensaje.email,
+            'fecha': mensaje.fecha,
+            'mensaje': mensaje.mensaje
+        }
+        mensajes_json.append(mensaje_json)
+    return JsonResponse(mensajes_json, safe=False)

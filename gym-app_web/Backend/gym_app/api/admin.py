@@ -5,6 +5,7 @@ from .models import Cliente
 from .models import Clase
 from .models import Reserva
 from .models import Orden
+from .models import Mensaje
 
 # Register your models here.
 
@@ -14,3 +15,4 @@ admin.site.register(Cliente)
 admin.site.register(Clase)
 admin.site.register(Reserva)
 admin.site.register(Orden)
+admin.site.register(Mensaje)

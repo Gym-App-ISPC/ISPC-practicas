@@ -121,9 +121,9 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '',
         'NAME': 'gym_app',
-        # 'OPTIONS': {
-        #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        # }
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_ALL_TABLES'"
+        }
     }
     # 'default': dj_database_url.config(default='django.db.backends.mysql')
     
