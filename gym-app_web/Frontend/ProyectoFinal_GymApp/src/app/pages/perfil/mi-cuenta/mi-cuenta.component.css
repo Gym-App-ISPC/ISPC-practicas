@@ -1,3 +1,7 @@
+#contPerfil {
+  height: 90%;
+}
+
 .container-perfil {
   display: flex;
   height: auto;
