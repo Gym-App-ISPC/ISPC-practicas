@@ -30,8 +30,8 @@ h2 {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
-  color: $light-color-font;
-  background-color: $primary-color;
+  color: $primary-color-darker;
+  font-weight: 400;
 }
 
 .custom-table {
@@ -71,4 +71,8 @@ h2 {
   text-align: center;
   font-size: 2rem;
   border-radius: 0 0 10px 10px;
+}
+.btn-clases{
+  background-color:$secondary-color;
+  color: $light-color-font;
 }
