@@ -6,7 +6,7 @@ import { ClientesService } from 'src/app/service/clientes.service';
 @Component({
   selector: 'app-mis-suscripciones',
   templateUrl: './mis-suscripciones.component.html',
-  styleUrls: ['./mis-suscripciones.component.css']
+  styleUrls: ['./mis-suscripciones.component.scss']
 })
 export class MisSuscripcionesComponent implements OnInit {
   clientes: any;
