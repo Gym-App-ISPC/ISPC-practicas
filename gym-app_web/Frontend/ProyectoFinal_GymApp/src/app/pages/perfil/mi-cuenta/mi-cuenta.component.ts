@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-mi-cuenta',
   templateUrl: './mi-cuenta.component.html',
-  styleUrls: ['./mi-cuenta.component.css']
+  styleUrls: ['./mi-cuenta.component.scss']
 })
 export class MiCuentaComponent implements OnInit {
   clientes: Clientes = {
