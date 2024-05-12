@@ -1,0 +1,10 @@
+.google-play-link {
+    color: #6c757d; 
+    text-decoration: none; 
+    
+  }
+  
+  .google-play-link:hover {
+    color: #your_hover_color; /* Cambia el color al pasar el mouse */
+  }
+  
