@@ -1,31 +1,28 @@
-<div class="w-auto shadow p-0 fs-6 container-login">
-  <div class="row w-100 justify-content-center fs-6 py-4">
-    <div class="col-md-6 formulario fs-6 px-4 rounded">
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100">
       <!-- Form Login -->
-      <form [formGroup]="loginAdmin" (ngSubmit)="logindata()" class="form-box">
+      <form [formGroup]="loginAdmin" (ngSubmit)="logindata()" class="login100-form">
         <div class="form-group text-center pt-0">
-          <h3>Login ADMIN</h3>
+          <h3 class="login100-form-title">Login ADMIN</h3>
         </div>
-        <div class="col-12 position-relative mb-4">
+        <div class="col-12 position-relative mb-4 wrap-input100">
           <div class="col-auto">
-            <label for="username" class="form-label">Email</label>
+            <label for="username" class="form-label "></label>
           </div>
-          <input type="text" formControlName="fname" class="form-control bg-light" id="username"
-            placeholder="Enter Email" required />
+          <input type="text" formControlName="fname" class="input100" id="username" placeholder="Enter Email" required />
+          <span class="focus-input100"></span>
         </div>
-        <div class="mb-4">
+        <div class="mb-4 wrap-input100">
           <div class="col-auto">
-            <label for="password" class="form-label">Password</label>
+            <label for="password" class="form-label "></label>
           </div>
-          <input type="password" formControlName="password" class="form-control bg-light" id="password"
-            placeholder="Enter Password" required />
+          <input type="password" formControlName="password" class="input100" id="password" placeholder="Enter Password" required />
+          <span class="focus-input100"></span>
         </div>
-        <div class="d-grid">
-          <button type="submit" class="btn btn-outline-dark">Iniciar Sesión</button>
+        <div class="d-grid container-login100-form-btn">
+          <button type="submit" class="login100-form-btn">Iniciar Sesión</button>
         </div>
-        <!-- <div class="my-2 mx-1 pb-4 text-light reg">
-          <span>¿No tienes una cuenta? <a routerLink="./registro.html" class="b">Regístrate</a></span><br>
-        </div> -->
       </form>
     </div>
   </div>
