@@ -1,41 +1,38 @@
-<div class=" w-auto shadow p-0 fs-6 container-login ">
-  <div class="row w-100 justify-content-center fs-6 py-4">
-    <div class="col-md-6 formulario fs-6 px-4 rounded">
-      <!--Form Login-->
-      <form [formGroup]="login" (ngSubmit)="logindata()" class="form-box">
-        <div class=" form-group text-center tittle border-bottom border-dark">
-         <h3>Login</h3>
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100 shadow p-0 fs-6 container-login">
+      <div class="row w-100 justify-content-center fs-6 py-4">
+        <div class="col-md-12 formulario fs-6 px-4 rounded">
+          <!--Form Login-->
+          <form [formGroup]="login" (ngSubmit)="logindata()" class="login100-form ">
+            <div class="form-group text-center tittle border-bottom border-dark">
+              <h3 class="login100-form-title">Login</h3>
+            </div>
+            <div class="col-12 position-relative mb-4 wrap-input100">
+              <div class="col-auto">
+                <label for="exampleInputEmail" class="form-label"></label>
+              </div>
+              <input type="text" formControlName="fname" class="input100 bg-light" id="username" placeholder="Enter Email" required />
+              <span class="focus-input100"></span>
+            </div>
+            <div class="mb-4 wrap-input100">
+              <div class="col-auto">
+                <label for="exampleInputPassword" class="form-label"></label>
+              </div>
+              <input type="password" formControlName="password" class="input100 bg-light" id="pass" placeholder="Enter Password" required />
+              <span class="focus-input100"></span>
+            </div>
+            <div class="d-grid container-login100-form-btn">
+              <button type="submit" class="login100-form-btn btn btn-outline-dark">Iniciar Sesión</button>
+            </div>
+            <div class="my-2 mx-1 pb-4 text-light reg">
+              <span>¿No tienes una cuenta? <a routerLink="/registro" class="b">Regístrate</a></span><br>
+            </div>
+            <br>
+            <br>
+          </form>
         </div>
-        <div class="col-12 position-relative mb-4">
-          <div class="col-auto">
-            <label for="exampleInputEmail" class="form-label">Email</label>
-          </div>
-          <input type="text" formControlName="fname" class="form-control bg-light" id="username"
-            placeholder="Enter Email" required />
-
-
-        </div>
-        <div class="mb-4">
-          <div class="col-auto">
-            <label for="exampleInputPassword" class="form-label">Password</label>
-          </div>
-          <input type="password" formControlName="password" class="form-control bg-light" id="pass"
-            placeholder="Enter Password" required />
-
-        </div>
-
-
-        <div class="d-grid">
-          <button type="submit" class="btn btn-outline-dark">Iniciar Sesión</button>
-        </div>
-
-        <div class="my-2 mx-1 pb-4 text-light reg">
-          <span>¿No tienes una cuenta? <a routerLink="/registro" class="b">Regístrate</a></span><br>
-        </div>
-        <br>
-        <br>
-
-
-      </form>
+      </div>
     </div>
   </div>
+</div>
