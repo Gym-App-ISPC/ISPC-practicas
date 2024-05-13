@@ -1,0 +1,61 @@
+.container-registro {
+    
+    background: url("../../assets/login.jpg") no-repeat center center fixed;
+    background-size: cover;    
+}
+
+
+.custom-form {
+    min-width: 300px;
+    max-width: 60%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    background-color:  rgb(223, 124, 124);
+   
+    
+    color: black;
+    margin-top: 5rem;
+  }
+  
+  .custom-form input {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+        rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    background: #ebf5fc;
+  }
+
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .alert-success strong,
+  .alert-danger strong {
+    font-weight: bold;
+  }
+  
+  .alert-success p,
+  .alert-danger p {
+    margin: 0;
+  }
+  

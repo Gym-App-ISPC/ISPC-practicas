@@ -1,0 +1,89 @@
+.container-perfil {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-image: url("/../../../../assets/fitness-perfil.jpg");
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+.editar-perfil-container {
+  max-width: 26rem;
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 1rem;
+}
+
+.editar-perfil-container .tittle {
+  font-weight: 500;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.editar-perfil-container .id {
+  display: none;
+}
+
+.editar-perfil-container .user p {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+@media (min-width: 375px) {
+  .editar-perfil-container {
+    max-width: 25rem;
+    width: 100%;
+    background: #dc3545;
+    color: #fff;
+    padding: 1.25rem 1.25rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .user-profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+  }
+
+  .user-profile-image img {
+    width: 25%;
+    height: auto;
+  }
+
+  .user p > span {
+    display: block;
+    color: #cab8b8;
+  }
+
+  .btn {
+    color: #fff;
+  }
+
+  .user-details {
+    margin: 0;
+  }
+
+  .user-details label {
+    margin: 0;
+  }
+
+  .user-details input {
+    margin: 0.5rem 0 0.5rem 0;
+    outline: none;
+  }
+
+  .form-control:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  }
+
+  .user-details .btn {
+    margin-top: 0.5rem;
+  }
+}

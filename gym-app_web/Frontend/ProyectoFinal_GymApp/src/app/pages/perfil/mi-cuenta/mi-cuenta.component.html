@@ -1,0 +1,132 @@
+<div
+  id="contPerfil"
+  class="w-auto shadow p-0 fs-6 container-perfil border border-secondary"
+>
+  <div class="editar-perfil-container">
+    <div *ngIf="clientes">
+      <div class="tittle border-bottom border-white">Mi cuenta</div>
+      <div class="user-profile-image">
+        <img src="../../../assets/image-jeremy.png" alt="" />
+      </div>
+      <div class="id">
+        <p>ID: {{ clientes.id }}</p>
+      </div>
+      <div class="user" *ngIf="!editar">
+        <p>
+          Nombre<span> {{ clientes.nombre }}</span>
+        </p>
+        <p>
+          Apellido<span> {{ clientes.apellido }}</span>
+        </p>
+        <p>
+          DNI<span> {{ clientes.dni }}</span>
+        </p>
+        <p>
+          Fecha de Nacimiento<span>
+            {{ clientes.fecha_nacimiento | date : "dd/MM/yyyy" }}</span
+          >
+        </p>
+        <p>
+          Email<span> {{ clientes.email }}</span>
+        </p>
+        <p>Contraseña<span> **********</span></p>
+      </div>
+      <div class="d-grid">
+        <button
+          type="submit"
+          class="btn btn-outline-dark border-white"
+          (click)="editarDatos()"
+          *ngIf="!editar"
+        >
+          Editar datos
+        </button>
+      </div>
+
+      <form *ngIf="editar" class="user-details">
+        <div class="input-box">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input
+            class="form-control"
+            type="text"
+            id="nombre"
+            [(ngModel)]="clientes.nombre"
+            name="nombre"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input
+            class="form-control"
+            type="text"
+            id="apellido"
+            [(ngModel)]="clientes.apellido"
+            name="apellido"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="dni" class="form-label">DNI</label>
+          <input
+            class="form-control"
+            type="number"
+            id="dni"
+            [(ngModel)]="clientes.dni"
+            name="dni"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="fecha_nacimiento" class="form-label"
+            >Fecha de Nacimiento</label
+          >
+          <input
+            class="form-control"
+            type="Date"
+            id="fecha_nacimiento"
+            [(ngModel)]="clientes.fecha_nacimiento"
+            name="fecha_nacimiento"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="email" class="form-label">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            [(ngModel)]="clientes.email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="contraseña" class="form-label">Contraseña</label>
+          <input
+            class="form-control"
+            type="password"
+            id="contraseña"
+            [(ngModel)]="clientes.password"
+            name="contraseña"
+            required
+          />
+        </div>
+
+        <div class="d-grid">
+          <button
+            type="submit"
+            class="btn btn-outline-dark border-white"
+            (click)="guardarCambios()"
+          >
+            Guardar cambios
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

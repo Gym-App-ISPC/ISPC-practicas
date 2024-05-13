@@ -1,0 +1,80 @@
+<section id="clases">
+  <h2>CLASES GRUPALES</h2>
+  <!-- INICIO TABLA HORARIOS -->
+  <div class="contenedor">
+    <table
+      mat-table
+      [dataSource]="dataSource"
+      class="mat-elevation-z8 custom-table"
+    >
+      <ng-container matColumnDef="HORARIOS">
+        <th mat-header-cell *matHeaderCellDef>HORARIOS</th>
+        <td mat-cell *matCellDef="let element">{{ element.HORARIOS }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="LUNES">
+        <th mat-header-cell *matHeaderCellDef>LUNES</th>
+        <td mat-cell *matCellDef="let element">{{ element.LUNES }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="MARTES">
+        <th mat-header-cell *matHeaderCellDef>MARTES</th>
+        <td mat-cell *matCellDef="let element">{{ element.MARTES }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="MIERCOLES">
+        <th mat-header-cell *matHeaderCellDef>MIERCOLES</th>
+        <td mat-cell *matCellDef="let element">{{ element.MIERCOLES }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="JUEVES">
+        <th mat-header-cell *matHeaderCellDef>JUEVES</th>
+        <td mat-cell *matCellDef="let element">{{ element.JUEVES }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="VIERNES">
+        <th mat-header-cell *matHeaderCellDef>VIERNES</th>
+        <td mat-cell *matCellDef="let element">{{ element.VIERNES }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+  <!-- FIN TABLA HORARIOS -->
+  <br />
+  <div class="d-grid">
+    <div class="d-flex justify-content-center">
+      <a routerLink="/registro">
+        <button type="button" class="btn btn-clases">ANOTARSE AHORA</button>
+      </a>
+    </div>
+  </div>
+  <br />
+  <section id="actividades" class="bg-dark">
+    <mat-card class="cardClase">
+      <img mat-card-image src="./assets/clases1.jpg" alt="Crossfit image" />
+      <mat-card-content class="cardLabel"
+        ><a href="#">Crossfit</a></mat-card-content
+      >
+    </mat-card>
+    <mat-card class="cardClase">
+      <img mat-card-image src="./assets/clases2.jpg" alt="Boxeo image" />
+      <mat-card-content class="cardLabel"
+        ><a href="#">Boxeo</a></mat-card-content
+      >
+    </mat-card>
+    <mat-card class="cardClase">
+      <img mat-card-image src="./assets/clases3.jpg" alt="Pilates image" />
+      <mat-card-content class="cardLabel"
+        ><a href="#">Pilates</a></mat-card-content
+      >
+    </mat-card>
+    <mat-card class="cardClase">
+      <img mat-card-image src="./assets/clases4.jpg" alt="Glúteos image" />
+      <mat-card-content class="cardLabel"
+        ><a href="#">Glúteos</a></mat-card-content
+      >
+    </mat-card>
+  </section>
+</section>

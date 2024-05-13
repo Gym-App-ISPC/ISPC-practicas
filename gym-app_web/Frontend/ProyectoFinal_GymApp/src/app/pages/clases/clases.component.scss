@@ -1,0 +1,78 @@
+@import '../../styles/variables';
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+    transition: 500ms;
+  }
+}
+
+.contenedor {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+#clases {
+  background: $primary-color;
+}
+
+table {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: $primary-color-darker;
+  font-weight: 400;
+}
+
+.custom-table {
+  th {
+    color: $secondary-color;
+    background-color: $primary-color-darker;
+    font-size: large;
+  }
+
+  td {
+    color: $light-color-font;
+    background-color: $primary-color-darker;
+  }
+}
+
+#actividades {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cardClase {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+}
+
+.cardClase img {
+  height: 15rem;
+}
+
+.cardLabel {
+  background-color: $secondary-color;
+  color: $light-color-font;
+  text-shadow: $text-shadow-props-dark;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 0 0 10px 10px;
+}
+.btn-clases{
+  background-color:$secondary-color;
+  color: $light-color-font;
+}

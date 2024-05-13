@@ -1,0 +1,31 @@
+<div class="w-auto shadow p-0 fs-6 container-plan border border-secondary">
+  <div class="container">
+    <div *ngIf="clientes">
+      <h1 class="tittle">Mi Suscripción</h1>
+      <div *ngIf="clientes">
+        <!-- <p><strong>Nombre:</strong> {{ clientes.nombre }}</p>
+        <p><strong>Apellido:</strong> {{ clientes.apellido }}</p>
+        <p><strong>DNI:</strong> {{ clientes.dni }}</p>
+        <p><strong>Fecha de Nacimiento:</strong> {{ clientes.fecha_nacimiento | date }}</p>
+        <p><strong>Email:</strong> {{ clientes.email }}</p> -->
+        <h2 class="subtitle">Detalles del Plan</h2>
+        <div *ngIf="clientes.plan_id" class="description">
+          <p>Descripción:</p>
+          <p [innerHTML]="clientes.plan.descripcion" class="description-text"></p>
+          <p>Cantidad de Clases: {{ clientes.plan.cantidad_clases }}</p>
+          <p>Precio: {{ clientes.plan.precio }}</p>
+          <p>Clases Restantes: {{ clientes.clases_restantes }}</p>
+        </div>
+        <div *ngIf="!clientes.plan_id">
+          <h2 class="text-light">
+            Aun no tenes un plan, adquiere uno en la
+            <button routerLink="/tienda" class="btn btn-dark">Tienda</button>
+          </h2>
+        </div>
+      </div>
+      <div *ngIf="!clientes" class="border-top border-primary">
+        <p>No se encontraron datos del cliente.</p>
+      </div>
+    </div>
+  </div>
+</div>

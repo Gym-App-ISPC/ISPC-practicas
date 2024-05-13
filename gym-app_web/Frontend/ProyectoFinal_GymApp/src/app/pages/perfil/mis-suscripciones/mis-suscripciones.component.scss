@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.container-plan {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-image: url("/../../../../../../../../assets/login.jpg");
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  /* Otros estilos de tu contenedor */
+}
+
+.container {
+  max-width: 26rem;
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 1rem;
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 25rem;
+    width: 100%;
+    background: $profile-background-color;
+    color: $default-white;
+    padding: 1.25rem 1.25rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    border: 1px solid $default-white;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+
+  .description p {
+    margin: 0.5rem 0;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+}
