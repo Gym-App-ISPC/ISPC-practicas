@@ -58,5 +58,16 @@ export class ApiService {
     this.cache = {}
     return this.http.delete<any>(url);
   }
+  //Mensajes
+  public crearMensaje(mensajeData: any): Observable<any> {
+    const url = this.urlApi + 'mostrar-mensajes/'; 
+    this.cache = {};
+    return this.http.post<any>(url, mensajeData).pipe(
+      catchError((error: any) => {
+        console.error('Error al crear mensaje', error);
+        throw error;
+      })
+    );
+  }
   
 }

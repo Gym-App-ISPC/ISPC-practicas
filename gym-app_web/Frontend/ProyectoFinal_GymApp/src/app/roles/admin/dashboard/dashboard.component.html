@@ -66,11 +66,32 @@
               </tbody>
             </table>
           </div>
-          <ng-template #noData>
-            <p>No hay datos disponibles</p>
-          </ng-template>
-        </mat-tab>
-      </mat-tab-group>
-    </div>
+        </div>
+      </mat-tab>
+      <mat-tab [ngClass]="{'selected-tab': currentTab === 4}">
+        <ng-template mat-tab-label>Mensajes</ng-template>
+        <div *ngIf="mensajes && mensajes.length > 0">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Mensaje</th>
+                <th>Fecha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let mensaje of mensajes; let i = index">
+                <td>{{ mensaje.nombre }}</td>
+                <td>{{ mensaje.email }}</td>
+                <td>{{ mensaje.mensaje }}</td>
+                <td>{{ mensaje.fecha }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div *ngIf="mensajes && mensajes.length === 0">No hay mensajes disponibles.</div>
+      </mat-tab>
+    </mat-tab-group>
   </div>
 </div>

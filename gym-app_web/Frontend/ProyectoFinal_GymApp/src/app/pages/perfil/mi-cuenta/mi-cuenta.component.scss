@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .container-perfil {
   display: flex;
   height: auto;
@@ -35,8 +37,8 @@
   .editar-perfil-container {
     max-width: 25rem;
     width: 100%;
-    background: #dc3545;
-    color: #fff;
+    background: $profile-background-color;
+    color: $default-white;
     padding: 1.25rem 1.25rem;
     margin: 0.5rem 0.5rem;
     border-radius: 1rem;
@@ -58,11 +60,11 @@
 
   .user p > span {
     display: block;
-    color: #cab8b8;
+    color: $profile-font-color-alternate;
   }
 
   .btn {
-    color: #fff;
+    color: $default-white;
   }
 
   .user-details {
@@ -79,8 +81,8 @@
   }
 
   .form-control:focus {
-    border-color: #fff;
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+    border-color: $default-white;
+    box-shadow: 0 0 0 0.2rem $white-with-alpha;
   }
 
   .user-details .btn {

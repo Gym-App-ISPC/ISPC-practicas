@@ -5,6 +5,9 @@ from .views import ClienteView
 from .views import ClaseView
 from .views import ReservaView
 from .views import OrdenView
+from .views import almacenar_mensaje
+from .views import mostrar_mensajes
+from . import views
 
 urlpatterns =[
   path('planes/', PlanView.as_view(), name='planes_list'),
@@ -19,4 +22,6 @@ urlpatterns =[
   path('reservas/<int:id>', ReservaView.as_view(), name='reserva_process'),
   path('ordenes/', OrdenView.as_view(), name='orden_list'),
   path('ordenes/<int:id>', OrdenView.as_view(), name='orden_process'),
+  path('mostrar-mensajes/', mostrar_mensajes, name='mostrar_mensajes'),
+  path('almacenar-mensaje/', almacenar_mensaje, name='almacenar_mensaje'),
 ]
