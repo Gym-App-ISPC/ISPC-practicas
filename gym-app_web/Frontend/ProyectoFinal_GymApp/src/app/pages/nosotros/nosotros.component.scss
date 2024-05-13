@@ -1,0 +1,92 @@
+@import '../../styles/variables';
+
+
+
+#nosotros {
+  background: $color-fondo;
+}
+
+
+
+
+$color-fondo: #fcf6f6; 
+$color-texto: #000000; 
+$color-botones: #dc3545; 
+$color-texto-boton: #fcf6f6;
+
+$tamaño-botón: 15px; 
+$radio-bordes-botón: 6px; 
+
+$tamano-imagen: 600px; 
+
+
+  $tamanioImgMusculacion: 150px;
+  $tamanioImgFuncional: 150px;
+  $tamanioImgActividades: 150px;
+  $tamanioImgNutricional: 150px;
+
+  .tamano-imagen {
+    max-width: $tamanioImgMusculacion; // Utiliza la variable correspondiente
+    max-height: $tamanioImgMusculacion; // Utiliza la variable correspondiente
+  }
+
+  .descripcion {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+  }
+
+  // Estilo para el texto de la descripción
+.descripcion-texto {
+  font-size: 20px; // Tamaño de fuente
+  line-height: 1.5; // Altura de línea
+  color: #111010; // Color de texto
+  margin-bottom: 10px; // Margen inferior
+  text-align: center;
+}
+
+
+.btn {
+  padding: 10px 20px; // Ajusta el relleno del botón para hacerlo más delicado
+  border: 2px solid transparent; // Añade un borde al botón
+  transition: all 0.3s ease; // Agrega transición para suavizar cambios de estilo
+}
+
+
+
+  
+// Definir variables de estilo
+$texto-color: #111010; 
+
+$texto-linea-altura: 2; 
+
+// Aplicar estilos a los elementos HTML
+.texto-principal {
+  color: $texto-color;
+  font-size: 18px;
+  line-height: $texto-linea-altura;
+}
+
+$mobile-width: 768px;
+$tablet-width: 992px;
+
+@media (max-width: $mobile-width) {
+  // Estilos específicos para dispositivos móviles
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  // Estilos específicos para tablets
+}
+
+@media (min-width: $tablet-width) {
+  // Estilos específicos para computadoras de escritorio
+}
+.element {
+  width: 50%; // Ejemplo de uso de porcentaje
+  padding: 1em; // Ejemplo de uso de em
+}
+
+img {
+  max-width: 100%; // Para hacer que las imágenes sean responsive
+}

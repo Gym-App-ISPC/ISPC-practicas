@@ -23,7 +23,7 @@
       </div>
       <div class="col-lg-8 text-center d-flex justify-content-center">
         <a routerLink="/planes" class="no-underline">
-          <button type="button" class="btn" [ngStyle]="{'background-color': colorBotones, 'color': colorTextoBoton, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
+          <button type="button" class="btn" [ngStyle]="{'background-color': colorBoton, 'color': colorTextoBoton, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
             Conocer los planes
           </button>
         </a>
@@ -36,89 +36,90 @@
 <section id="nosotros2" class="py-5" [ngStyle]="{'background-color': colorSeccion}">
   <div class="container px-5">
     <div class="row">
+      <!-- Primera imagen y descripción -->
+      <div class="col-lg-6">
+        <div class="position-relative mb-5">
+          <img
+            class="img-fluid rounded-3 mb-3"
+            src="./assets/bg-3.jpg"
+            alt="Musculación"
+          />
+          
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="descripcion">
+          <a class="h4 fw-bolder text-red text-decoration-none link-danger stretched-link d-block" routerLink="/planes">Musculación</a>
+          <p class="descripcion-texto">
+            La musculación es una actividad orientada a la tonificación y desarrollo muscular, mediante el uso de máquinas y pesas. Se consigue:
+            mejor salud física y mental ademas de mejora de la imagen personal.
+          </p>
+          <a routerLink="/registro" class="no-underline">
+            <button type="button" class="btn" [ngStyle]="{'background-color': colorBoton, 'color': colorTextoBoton, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
+              Anotarme ahora
+            </button>
+            
+          </a>
+          
+        </div>
+      </div>
+      <!-- Segunda imagen y descripción -->
+      <div class="col-lg-6">
+        <div class="descripcion">
+          <a class="h4 fw-bolder text-red text-decoration-none link-danger stretched-link d-block" routerLink="/planes">Entrenamiento Funcional</a>
+          <p class="descripcion-texto">
+            El entrenamiento funcional es un tipo de ejercicio que se parece a los movimientos que haces en tu vida diaria. Puede ser útil para el rendimiento deportivo, la prevención de lesiones y otras tareas físicas en la vida cotidiana
+          </p>
+
+          <a routerLink="/registro" class="no-underline">
+            <button type="button" class="btn" [ngStyle]="{'background-color': colorBoton, 'color': colorTextoBoton, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
+              Anotarme ahora
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="position-relative mb-5">
+          <img
+            class="img-fluid rounded-3 mb-3"
+            src="./assets/funcional3.jpg"
+            alt="Funcional"
+          />
+        </div>
+      </div>
       
+      <!-- Tercera imagen y descripción -->
       <div class="col-lg-6">
-        <div class="row gx-5">
-          <div class="col-lg-6">
-            <div class="position-relative mb-5">
-              <img
-                class="img-fluid rounded-3 mb-3 tamano-imagen"
-                src="./assets/gimnasio3.jpg"
-                alt="Musculación"
-                [style.max-width]="tamanoImagen"
-                [style.max-height]="tamanoImagen"
-              />
-              <a
-                class="h4 fw-bolder text-white text-decoration-none link-danger stretched-link d-block"
-                routerLink="/planes"
-                >Musculación</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="position-relative mb-5">
-              <img
-                class="img-fluid rounded-3 mb-3 tamano-imagen"
-                src="./assets/funcional3.jpg"
-                alt="Funcional"
-                [style.max-width]="tamanoImagen"
-                [style.max-height]="tamanoImagen"
-              />
-              <a
-                class="h4 fw-bolder text-white text-decoration-none link-danger stretched-link d-block"
-                routerLink="/planes"
-                >Funcional</a
-              >
-            </div>
-          </div>
+        <div class="position-relative mb-5">
+          <img
+            class="img-fluid rounded-3 mb-3"
+            src="./assets/clases3.jpg"
+            alt="Actividades complementarias"
+          />
+          
         </div>
       </div>
+      <div class="col-lg-6">
+        <div class="descripcion">
+          <a
+          class="h4 fw-bolder text-red text-decoration-none link-danger stretched-link d-block"
+          routerLink="/planes"
+          >Actividades complementarias</a>
+          <p class="descripcion-texto">
+            Podes acceder a una gran variedad de opciones de clases: Yoga, Zumba, Spinning, Fit Combat, GAP, entre otros.
+          </p>
+          <a routerLink="/registro" class="no-underline">
+            <button type="button" class="btn" [ngStyle]="{'background-color': colorBoton, 'color': colorTextoBoton, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
+              Anotarme ahora
+            </button>
+          </a>
+        </div>
+      </div>
+      
     
-      <div class="col-lg-6">
-        <div class="row gx-5">
-          <div class="col-lg-6">
-            <div class="position-relative mb-5">
-              <img
-                class="img-fluid rounded-3 mb-3 tamano-imagen"
-                src="./assets/gimnasio1.jpg"
-                alt="Actividades complementarias"
-                [style.max-width]="tamanoImagen"
-                [style.max-height]="tamanoImagen"
-              />
-              <a
-                class="h4 fw-bolder text-white text-decoration-none link-danger stretched-link d-block"
-                routerLink="/planes"
-                >Actividades complementarias</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="position-relative mb-5">
-              <img
-                class="img-fluid rounded-3 mb-3 tamano-imagen"
-                src="./assets/nutricion3.jpg"
-                alt="Asesoramiento nutricional"
-                [style.max-width]="tamanoImagen"
-                [style.max-height]="tamanoImagen"
-              />
-              <a
-                class="h4 fw-bolder text-white text-decoration-none link-danger stretched-link d-block"
-                routerLink="/planes"
-                >Asesoramiento nutricional</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
-   
-      <div class="col-lg-12 text-center d-flex justify-content-center">
-        <a routerLink="/registro" class="no-underline">
-          <button type="button" class="btn" [ngStyle]="{'background-color': colorBotones, 'color': colorTextoBoton, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
-            Anotarme ahora
-          </button>
-        </a>
-      </div>
-    </div>
-  
-</section>
+  </div>
+    </section>
+    
+ 
