@@ -1,8 +1,62 @@
 .banner-danger {
-    position: relative; /* enable relative positioning for the section */
-    top: -50px; 
-    z-index: 1; 
-  }
-  .banner-danger .btn {
-    width: 150px; 
-  }
+  position: relative;
+  /* enable relative positioning for the section */
+  top: -50px;
+  z-index: 1;
+}
+
+.banner-danger .btn {
+  width: 150px;
+}
+
+
+.available-app-area {
+  background: #eee;
+  height:500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.sample-text-area {
+  background: #fff;
+  padding-right: 70px;
+  padding-bottom: 70px
+}
+
+
+.text-heading {
+  margin-bottom: 30px;
+  font-size: 24px
+}
+
+
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+  color: #828bb2
+}
+
+.button-area {
+  background: #212529
+}
+
+.button-area .border-top-generic {
+  padding: 70px 15px;
+  border-top: 1px dotted #eee
+}
+
+.button-group-area .genric-btn {
+  margin-right: 10px;
+  margin-top: 10px
+}
+.app-btn{
+  gap: 5px;
+  margin-top: 30px;
+}
+.app-img img{
+  width: 100%;
+}
