@@ -5,13 +5,15 @@
 margin-left: -600px;
 
 background: url("../../../../assets/login.jpg") no-repeat center center fixed;
+height: 40vw!important; 
+background-repeat:inherit;
 }
 
 .container {
  
   max-width: 1200px;
   margin: 0 auto;
-margin-left: 950px;
+margin-left: 1150px;
   padding: 100px;
   display: flex;
   flex-wrap: wrap;
