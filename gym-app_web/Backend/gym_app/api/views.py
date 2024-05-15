@@ -218,7 +218,6 @@ class PlanView(View):
       plan.descripcion = jd['descripcion']
       plan.cantidad_clases = jd['cantidad_clases']
       plan.precio = jd['precio']
-      plan.fecha_inicio = jd['fecha_inicio']
       plan.save()
       datos = {'mensaje': "Success"}
     else:

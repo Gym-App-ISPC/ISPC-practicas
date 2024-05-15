@@ -2,7 +2,7 @@
   background: #730101f3;
   height: 80%;
   padding: 20px 0;
-margin-left: -600px;
+  margin-left: -600px;
   background: url("../../../../assets/login.jpg") no-repeat center center fixed;
 }
 
@@ -11,9 +11,8 @@ margin-left: -600px;
   margin: 0 auto;
   padding: 20px;
 }
-.my-5{
+.my-5 {
   color: #fff;
-  
 }
 
 .card {
@@ -22,7 +21,6 @@ margin-left: -600px;
   background-color: #ffffff7c;
   margin-bottom: 20px;
   width: 200%;
- 
 }
 
 .card-header {
@@ -63,4 +61,14 @@ margin-left: -600px;
 
 .btn:hover {
   background-color: #555;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+.form-container label,
+.form-container input {
+  width: 100%; /* Ajusta según sea necesario */
 }
