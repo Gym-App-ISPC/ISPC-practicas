@@ -57,11 +57,13 @@ ul, li {
 input {
 	outline: none;
 	border: none;
+  
 }
 
 textarea {
   outline: none;
   border: none;
+  
 }
 
 textarea:focus, input:focus {
@@ -148,11 +150,20 @@ iframe {
 
 /*==================================================================
 [ Form ]*/
+@media only screen and (max-width: 597px) and (max-height: 898px) {
+  .login100-form {
+    margin-left: 20vw;
+    padding-right: 5vw;
+    }
+
+}
+
 
 .login100-form {
   width: 90%;
   margin: 100px;
   margin-left: 30px;
+  
 }
 
 .login100-form-title {

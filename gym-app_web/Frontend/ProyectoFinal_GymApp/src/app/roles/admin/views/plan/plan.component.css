@@ -14,7 +14,48 @@
 .my-5 {
   color: #fff;
 }
+@media only screen and (max-width: 895px) {
+  .card {
+    width: 80%; /* Ancho ajustado */
+    margin-left: 10%; /* Margen izquierdo ajustado */
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 70%; /* Ancho ajustado */
+    margin-left: 15%; /* Margen izquierdo ajustado */
+  }
+}
+
+@media only screen and (max-width: 1259px) {
+  .card {
+    max-width: calc(150% - 10vw);/* Ancho ajustado */
+    margin-left: 35%; /* Margen izquierdo ajustado */
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 45%;
+    max-width: 100%; /* Máximo 80% del ancho de la pantalla */
+  }
+}
+@media only screen and (max-width: 669px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 55%;
+    max-width: 80%; /* Máximo 80% del ancho de la pantalla */
+  }
+}
+@media only screen and (max-width: 569px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 75%;
+    max-width: 50%; /* Máximo 80% del ancho de la pantalla */
+  }
+}
 .card {
   border: 1px solid #ccc;
   border-radius: 5px;

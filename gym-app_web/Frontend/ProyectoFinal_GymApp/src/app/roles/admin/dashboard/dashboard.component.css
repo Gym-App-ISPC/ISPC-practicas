@@ -10,7 +10,7 @@
   max-width: 1200px;
   height:600px;
   padding: 20px;
-  background-color: #9c9c9c9a;
+  background-color: #df7c7c4b;
   border-radius: 10px;
   font-family: monospace;
   font-size: larger;
@@ -46,6 +46,8 @@ table {
   border-collapse: collapse;
   margin-bottom: 10px;
 }
+
+
 
 
 table th,
