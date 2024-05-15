@@ -11,7 +11,52 @@
   margin: 0 auto;
   padding: 20px;
 }
+@media only screen and (max-width: 895px) {
+  .card {
+    width: 80%; /* Ancho ajustado */
+    margin-left: 10%; /* Margen izquierdo ajustado */
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 70%; /* Ancho ajustado */
+    margin-left: 15%; /* Margen izquierdo ajustado */
+  }
+}
+
+@media only screen and (max-width: 1149px) {
+  .card {
+    max-width: calc(150% - 10vw);/* Ancho ajustado */
+    margin-left: 35%; /* Margen izquierdo ajustado */
+  }
+}
+
+@media only screen and (max-width: 1105px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 85%;
+    max-width: 70%; /* Máximo 80% del ancho de la pantalla */
+  }
+}
+@media only screen and (max-width: 1019px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 60%!important;
+    max-width: 40%; }
+}
+@media only screen and (max-width: 569px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left:57%!important;
+    max-width: 40%; }
+}
+@media only screen and (max-width: 420px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 65%!important;
+    max-width: 30%; }
+}
 .card {
   border: 1px solid #ccc;
   border-radius: 5px;
