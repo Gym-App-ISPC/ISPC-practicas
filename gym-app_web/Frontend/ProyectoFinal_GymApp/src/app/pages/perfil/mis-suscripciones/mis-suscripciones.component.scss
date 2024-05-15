@@ -20,6 +20,10 @@
 }
 
 @media (min-width: 375px) {
+  .main-container {
+    height: 100vh;
+  }
+
   .container {
     max-width: 25rem;
     width: 100%;
@@ -48,5 +52,9 @@
 
   .description-text {
     font-size: 1rem;
+  }
+
+  .no-plan {
+    font-size: 1.2rem;
   }
 }
