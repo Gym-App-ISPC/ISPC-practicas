@@ -3,15 +3,17 @@
     height: 80%;
     padding: 20px 0;
   margin-left: -600px;
-  
+  height: 40vw!important; 
+
   background: url("../../../../assets/login.jpg") no-repeat center center fixed;
+  background-repeat:inherit;
   }
   
   .container {
-   
+    margin-left: 1150px;
     max-width: 1200px;
     margin: 0 auto;
-  margin-left: 950px;
+  margin-left: 1180px;
     padding: 100px;
     display: flex;
     flex-wrap: wrap;

@@ -1,6 +1,7 @@
 .container-login100 {
     background: url("../../assets/login.jpg") no-repeat center center fixed;
     background-size: cover;    
+     height: 40vw!important; 
 }
 
 .form-box {

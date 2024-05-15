@@ -4,12 +4,16 @@
   padding: 20px 0;
   margin-left: -600px;
   background: url("../../../../assets/login.jpg") no-repeat center center fixed;
+  background-repeat:inherit;
+  height: 40vw!important; 
+
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
 }
 
 .title {
@@ -281,6 +285,7 @@
   color: #ffffff;
   font-size: larger;
   font-weight: lighter;
+  margin-left: 1280px;
 }
 
 .card-header {

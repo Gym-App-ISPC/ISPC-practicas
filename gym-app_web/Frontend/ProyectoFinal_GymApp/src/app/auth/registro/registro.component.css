@@ -2,6 +2,7 @@
   background: url("../../assets/login.jpg") no-repeat center center fixed;
   background-size: cover;
   margin-top: -80px;
+  height: 40vw!important; 
 }
 
 .formulario {

@@ -3,6 +3,8 @@
   background: url("../../../assets/login.jpg") no-repeat center center fixed;
   height: auto;
   padding: 50px 0;
+  height: 40vw!important; 
+ background-repeat:inherit;
 }
 
 .dashboard-container {
