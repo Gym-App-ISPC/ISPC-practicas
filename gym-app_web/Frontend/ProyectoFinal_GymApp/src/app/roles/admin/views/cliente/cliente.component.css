@@ -20,9 +20,260 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+@media only screen and (max-width: 1630px) {
+  .main{
+    margin-left: -56vw!important;
+    margin-left: -209vw;
+    padding-right: 40%;
+    font-size: 70%;
+    height: fit-content;
+  }
+
+  .card-body {
+    width: 180%!important; /* Ancho ajustado */
+   
+  }
+}
+@media only screen and (max-width: 1374px) {
+  .main{
+    margin-left: -56vw!important;
+    
+    font-size: 70%;
+  }
+  .card-body {
+    width: 180%!important; /* Ancho ajustado */
+    
+  }
+ 
+}
+@media only screen and (max-width: 1214px) {
+  .main{
+    margin-left: -46vw!important;
+    
+    font-size: 70%;
+  }
+  div.card{
+    margin: 0 0 0 80%!important;
+  }
+  .card-body {
+    width: 180%!important; /* Ancho ajustado */
+    
+  }
+ 
+}
+@media only screen and (max-width: 1008px) {
+  .main{
+    margin-left: -33vw!important;
+    
+    font-size: 70%;
+  }
+  .card-body {
+    width: 180%!important; /* Ancho ajustado */
+    
+  }
+  
+ 
+}
+@media only screen and (max-width: 965px) {
+  .main{
+    margin-left: -96vw!important;
+    
+    font-size: 70%;
+  }
+  
+  .card-body {
+    width: 180%!important; /* Ancho ajustado */
+   
+  }
+ div.card-body{
+  margin-left: 10%;
+ }
+  div.card-plan.mb-3{
+  margin-left: 80%;
+  width: 30vw ;
+ }
+}
+@media only screen and (max-width: 919px) {
+  .main{
+    margin-left: -106vw!important;
+    padding-right: 40%;
+  
+    font-size: 70%;
+  }
+  .card-body {
+    width: 180%!important; /* Ancho ajustado */
+    
+  }
+ 
+}
+@media only screen and (max-width: 730px) {
+.main{
+  margin-left: -126vw!important;
+  padding-right: 40%;
+
+  font-size: 70%;
+}
+.card-body {
+  width: 180%!important; /* Ancho ajustado */
+  
+}
+}
+@media only screen and (max-width: 690px) {
+  .main{
+    margin-left: -246vw!important;
+   
+    height: fit-content;
+    font-size: 70%;
+  }
+  .card-body {
+    width: 180%!important; /* Ancho ajustado */
+    
+  }
+  }
+  @media only screen and (max-width: 648px) {
+    .main{
+     
+     
+      height: fit-content;
+      font-size: 70%;
+    }
+    div.card{
+      margin: 0 0 0 70%!important;
+    }
+    .card-body {
+      width: 180%!important; /* Ancho ajustado */
+      margin-left: -2vw!important;
+    }
+    }
+  @media only screen and (max-width: 482px) {
+    .main{
+      margin-left: -196vw!important;
+      padding-right: 40%;
+    
+      font-size: 70%;
+    }
+    .card-body {
+      width: 180%!important; /* Ancho ajustado */
+      
+    }
+    }
+
+    @media only screen and (max-width: 432px) {
+      .main{
+        margin-left: -226vw!important;
+        padding-right: 40%;
+      
+        font-size: 70%;
+      }
+   
+      .card-body {
+        width: 180%!important; /* Ancho ajustado */
+        
+      }
+      }
+@media only screen and (max-width: 1630px) {
+  .card-body {
+    max-width: 80%; /* Ancho ajustado */
+    width: 80%;
+    padding-left: 0%;
+  }
+  div.card{
+    margin: 0 0 0 50%!important;
+  }
+  .main{
+    margin-left: -109vw;
+    padding-right: 40%;
+  }
+}
+
+@media only screen and (max-width: 1449px) {
+  .card-body {
+    max-width: 80%; /* Ancho ajustado */
+    width: 80%;
+    padding-left: 0%;
+  }
+  div.card{
+    margin: 0 0 0 50%!important;
+  }
+  .main{
+    margin-left: -109vw;
+    padding-right: 40%;
+  }
+}
+
+
+@media only screen and (max-width: 912px) {
+  .main{
+    margin-left: -106vw!important;
+    padding-right: 40%;
+  
+    font-size: 70%;
+  }
+  .card-body {
+    width: 180%!important; /* Ancho ajustado */
+    
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .main{
+    margin-left: -56vw!important;
+    
+  
+    font-size: 70%;
+  }
+  div.card{
+    margin: 0 0 0 50%!important;
+  }
+  .card-body {
+    width: 150%!important; /* Ancho ajustado */
+    
+  }
+}
+@media only screen and (max-width: 1048px) {
+  .main{
+    margin-left: -53vw!important;
+    
+  
+    font-size: 70%;
+  }
+  div.card{
+    margin: 0 0 0 50%!important;
+  }
+  .card-body {
+    width: 150%!important; /* Ancho ajustado */
+    
+  }
+}
+
+@media only screen and (max-width: 1038px) {
+  .main{
+    margin-left: -53vw!important;
+    
+  
+    font-size: 70%;
+  }
+  div.card{
+    margin: 0 0 0 50%!important;
+    width: 60%;
+  }
+  .card-body {
+    max-width: fit-content;
+    width: 200%!important; /* Ancho ajustado */
+    
+  }
+  div.card-body{
+    margin-left: 10%;
+   }
+    div.card-plan.mb-3{
+    margin-left: 80%;
+    width: 30vw ;
+   }
+}
+
 .card {
   margin-left: 1000px;
- height: 600px;
+  height: 600px;
   border-radius: 15px;
   background-color: #5757575d;
   margin-bottom: 20px;
