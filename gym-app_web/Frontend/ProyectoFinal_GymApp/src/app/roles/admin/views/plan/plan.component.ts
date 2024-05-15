@@ -71,7 +71,7 @@ export class PlanComponent {
           'Tu plan fue editado exitosamente!.',
           'success'
         ).then(() => {
-          window.location.reload();
+          window.location.assign('/dashboard');
         });
       },
       (error: any) => {
