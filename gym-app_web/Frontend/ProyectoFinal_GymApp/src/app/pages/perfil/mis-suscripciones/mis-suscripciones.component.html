@@ -3,12 +3,8 @@
     <div *ngIf="clientes">
       <h1 class="tittle">Mi Suscripción</h1>
       <div *ngIf="clientes">
-        <!-- <p><strong>Nombre:</strong> {{ clientes.nombre }}</p>
-        <p><strong>Apellido:</strong> {{ clientes.apellido }}</p>
-        <p><strong>DNI:</strong> {{ clientes.dni }}</p>
-        <p><strong>Fecha de Nacimiento:</strong> {{ clientes.fecha_nacimiento | date }}</p>
-        <p><strong>Email:</strong> {{ clientes.email }}</p> -->
         <h2 class="subtitle">Detalles del Plan</h2>
+        <h3 [innerHTML]="clientes.plan.nombre"></h3>
         <div *ngIf="clientes.plan_id" class="description">
           <p>Descripción:</p>
           <p [innerHTML]="clientes.plan.descripcion" class="description-text"></p>
