@@ -1,17 +1,47 @@
 <div class="main">
-<div class="title"><h2 class="text-center my-5">Detalles del Plan</h2></div>
-<div class="card">
-  <div class="card bg-light">
-    <div class="card-header">Plan</div>
-    <div class="card-body">
-      <p class="mb-1"><strong>Nombre:</strong> {{ plan.nombre }}</p>
-      <p class="mb-1"><strong>Descripción:</strong> {{ plan.descripcion }}</p>
-      <p class="mb-1"><strong>Cantidad de clases:</strong> {{ plan.cantidad_clases }}</p>
-      <p class="mb-0"><strong>Precio:</strong> {{plan.precio }}</p>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">DETALLES DEL PLAN</div>
+      <div class="card-body">
+        <div *ngIf="!editar">
+          <p><strong>Nombre:</strong> {{ plan.nombre }}</p>
+          <p><strong>Descripción:</strong> {{ plan.descripcion }}</p>
+          <p><strong>Cantidad de clases:</strong> {{ plan.cantidad_clases }}</p>
+          <p><strong>Precio:</strong> {{ plan.precio }}</p>
+        </div>
+        <div id="edicion" class="form-container" *ngIf="editar">
+          <label for="nombre">Nombre: </label>
+          <input [(ngModel)]="plan.nombre" id="nombre" placeholder="Nombre" />
+
+          <label for="descripcion">Descripción: </label>
+          <input
+            [(ngModel)]="plan.descripcion"
+            id="descripcion"
+            placeholder="Descripción"
+          />
+
+          <label for="cantidadClases">Cantidad de clases: </label>
+          <input
+            [(ngModel)]="plan.cantidad_clases"
+            id="cantidadClases"
+            placeholder="Cantidad de clases"
+          />
+
+          <label for="precio">Precio: </label>
+          <input [(ngModel)]="plan.precio" id="precio" placeholder="Precio" />
+        </div>
+        <div class="button-group">
+          <button class="btn btn-danger" (click)="showModalDelete()">
+            Eliminar Plan
+          </button>
+          <button class="btn btn-danger" (click)="guardarCambios()">
+            Editar Plan
+          </button>
+          <button class="btn btn-secondary" (click)="regresar()">
+            Regresar
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-  <button class="btn btn-danger" (click)="showModal()">Eliminar Plan</button>
-  <button class="btn btn-secondary" (click)="regresar()">Regresar</button>
-
-</div>
 </div>

@@ -1,35 +1,33 @@
-<div class=" w-auto shadow p-0 fs-6 container-registro ">
-  <div class="row w-100 justify-content-center fs-6 py-4">
-    <div class="col-md-6 formulario fs-6 px-4 rounded">
-      
-
-      <form [formGroup]="registroForm" (ngSubmit)="registrarCliente()" class="custom-form">
-        <div>
-          <div class="tittle border-bottom border-dark"><h2>Registro de Cliente</h2></div>
-          <label for="nombre">Nombre:</label>
-          <input id="nombre" type="text" formControlName="nombre" placeholder="Nombre" />
-        </div>
-        <div>
-          <label for="apellido">Apellido:</label>
-          <input id="apellido" type="text" formControlName="apellido" placeholder="Apellido" />
-        </div>
-        <div>
-          <label for="dni">DNI:</label>
-          <input id="dni" type="text" formControlName="dni" placeholder="Ingresar DNI completo" />
-        </div>
-        <div>
-          <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-          <input id="fecha_nacimiento" type="date" formControlName="fecha_nacimiento"
-            placeholder="Ingresar la fecha de nacimiento" />
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input id="email" type="email" formControlName="email" placeholder="Email con formato @" />
-        </div>
-        <div>
-          <label for="contraseña">Contraseña:</label>
-          <input id="contraseña" type="password" formControlName="password" placeholder="Ingrese la contraseña" />
-        </div>
+<div class="container-registro">
+  <div class="formulario">
+    <form [formGroup]="registroForm" (ngSubmit)="registrarCliente()" class="custom-form">
+      <div class="tittle border-bottom border-dark">
+        <h2>Registro de Cliente</h2>
+      </div>
+      <div class="form-group">
+        <label for="nombre"></label>
+        <input id="nombre" type="text" formControlName="nombre" placeholder="NOMBRE" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="apellido"></label>
+        <input id="apellido" type="text" formControlName="apellido" placeholder="APELLIDO" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="dni"></label>
+        <input id="dni" type="text" formControlName="dni" placeholder="INGRESAR DNI" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="fecha_nacimiento">FECHA DE NACIMIENTO:</label>
+        <input id="fecha_nacimiento" type="date" formControlName="fecha_nacimiento" placeholder="Ingresar la fecha de nacimiento" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="email"></label>
+        <input id="email" type="email" formControlName="email" placeholder="INGRESAR EMAIL CON FORMATO xxxx@xxx.xxx" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="contraseña"></label>
+        <input id="contraseña" type="password" formControlName="password" placeholder="INGRESAR CONTRASEÑA" class="form-control" />
+      </div>
 
       <!-- Alerta de registro exitoso -->
       <div class="alert alert-success" *ngIf="registroExitoso">
@@ -46,5 +44,4 @@
       </div>
     </form>
   </div>
-</div>
 </div>

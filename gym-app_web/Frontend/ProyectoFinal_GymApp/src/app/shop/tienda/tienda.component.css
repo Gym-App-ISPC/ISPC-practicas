@@ -12,7 +12,10 @@
   color:#100df2;
   
 }
-
+main{
+  height: 40vw!important; 
+  
+}
 header {
   display: flex;
   justify-content: space-between;

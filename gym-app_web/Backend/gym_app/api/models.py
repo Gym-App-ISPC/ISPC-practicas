@@ -11,8 +11,7 @@ class Plan(models.Model):
   nombre=models.CharField(max_length=50)
   descripcion=models.CharField(max_length=150)
   cantidad_clases=models.PositiveBigIntegerField()
-  precio=models.PositiveSmallIntegerField()
-  # fecha_inicio=models.DateTimeField(null=True)
+  precio=models.PositiveIntegerField()
 
 class Cliente(models.Model):
   nombre=models.CharField(max_length=50)

@@ -1,6 +1,8 @@
-<div class="main"><div class="title"><h2 class="text-center my-5">Detalles del Cliente</h2>
-</div>
+<div class="main">
 <div class="card">
+  <div class="title">
+  
+  <h2 class="text-center my-5">DETALLES DEL CLIENTE</h2></div>
   <div class="card-body">
     <div class="mb-4">
       <p class="mb-1"><strong>Nombre:</strong> {{ cliente.nombre }}</p>
@@ -10,7 +12,7 @@
       <p class="mb-0"><strong>Fecha de nacimiento:</strong> {{ cliente.fecha_nacimiento }}</p>
     </div>
 
-    <div class="card-plan bg-light mb-3">
+    <div class="card-plan mb-3">
       <div class="card-header">Plan</div>
       <div class="card-body">
         <p class="mb-1"><strong>Nombre:</strong> {{ cliente.plan ? cliente.plan.nombre : 'Cliente sin plan' }}</p>

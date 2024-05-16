@@ -1,137 +1,117 @@
-
-
-.card-body{
-  width: 300px;
-  height: 250px;
-  margin-top: -28px;
-  color: aliceblue;
-}
-.card-header{
-  color: aliceblue;
-}
-.cards-wrapper {
-display: grid;
-justify-content: center;
-align-items: center;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 1 px;
-padding: 1px;
-margin: 0 auto;
-width: max-content;
- border: #230606;
-  height: 590px;
-
-  
-}
-
-.card {
-font-family: monospace;
---bg-filter-opacity: 0.5;
- height: 390px;
-width: 1000px;
-font-size: 1.5em;
-color: rgb(255, 255, 255);
-border-radius: 1em;
-padding: 1em;
-padding-bottom:1px;
-margin-bottom: 6px;
-/*margin: 2em;*/
-display: flex;
-align-items: normal;
-background: linear-gradient(90deg, rgb(186, 4, 4) 0%, rgb(123, 2, 2) 100%);
-margin-top: -22px;
-
-box-shadow: 0 0 5em -1em black;
-transition: all, var(--transition-time);
-position: relative;
-
-
-text-decoration: none;
-margin-left: 8rem;
-}
-.bg-light{
-  margin-left: 0rem; 
-  height: 383px;
-  width: 950px;
-  font-size: 15px;
-  color: red;
-  border: #23060600;
-  
-}
-.card:hover {
-transform: rotate(0);
-}
-
-.card h1 {
-margin: 0;
-font-size: 1em;
-line-height: 1em;
-font-family: monospace;
-}
-
-.card p {
-font-size: 0.75em;
-font-family: 'Open Sans';
-margin-top: 0.5em;
-line-height: 2em;
-font-family: monospace;
-}
-
-
-
-
-
-
-.card:before {
-background: #230606;
-width: 250%;
-height: 250%;
-}
-
-.card:after {
-background: rgba(238, 42, 32, 0.677);
-width: 200%;
-height: 200%;
-}
-
-.card:hover {
-color: var(--color);
-}
-
-.card:hover:before, .card:hover:after {
-transform: scale(1);
-}
-
-.card-grid-space .num {
-font-size: 0.2em;
-margin-bottom: 0.1rem;
-margin-left: 0.1rem;
-
-}
-
-.title{
-padding-top: 5px;
-
-color: rgba(176, 175, 175, 0.921);
-
-align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.btn-grp{
-  position: relative;
-  margin-top: -392px ;
-  margin-left: 700px;
-}
-
-
-
-
-.main{
-  margin-top: -50px;
+.main {
   background: #730101f3;
- height: 512px;
+  height: 80%;
+  padding: 20px 0;
+  margin-left: -600px;
+  background: url("../../../../assets/login.jpg") no-repeat center center fixed;
+  height: 40vw!important; 
+  background-repeat:inherit;
 }
-.btn-danger{
-  background-color: red;
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.my-5 {
+  color: #fff;
+}
+@media only screen and (max-width: 895px) {
+  .card {
+    width: 80%; /* Ancho ajustado */
+    margin-left: 10%; /* Margen izquierdo ajustado */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 70%; /* Ancho ajustado */
+    margin-left: 15%; /* Margen izquierdo ajustado */
+  }
+}
+
+@media only screen and (max-width: 1259px) {
+  .card {
+    max-width: calc(150% - 10vw);/* Ancho ajustado */
+    margin-left: 35%; /* Margen izquierdo ajustado */
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 45%;
+    max-width: 100%; /* Máximo 80% del ancho de la pantalla */
+  }
+}
+@media only screen and (max-width: 669px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 55%;
+    max-width: 80%; /* Máximo 80% del ancho de la pantalla */
+  }
+}
+@media only screen and (max-width: 569px) {
+  .card {
+    width: 30%; /* Porcentaje del ancho de la pantalla */
+    margin-left: 75%;
+    max-width: 50%; /* Máximo 80% del ancho de la pantalla */
+  }
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff7c;
+  margin-bottom: 20px;
+  width: 200%;
+}
+
+.card-header {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+.form-container label,
+.form-container input {
+  width: 100%; /* Ajusta según sea necesario */
 }

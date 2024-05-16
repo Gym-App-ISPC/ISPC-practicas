@@ -23,11 +23,20 @@ export class RegistroComponent {
     this.registroForm = new FormGroup({
       nombre: new FormControl('', Validators.required),
       apellido: new FormControl('', Validators.required),
-      dni: new FormControl('', Validators.required),
+      dni: new FormControl('', [Validators.required, this.dniValidator]),
       fecha_nacimiento: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', Validators.required)
     });
+  }
+
+  // Validador personalizado para el campo DNI
+  dniValidator(control: FormControl) {
+    const value = control.value as string;
+    if (value.length !== 8) {
+      return { dniInvalido: true };
+    }
+    return null;
   }
 
   registrarCliente(): void {
