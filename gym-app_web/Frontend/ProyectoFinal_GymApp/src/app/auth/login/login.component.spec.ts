@@ -30,7 +30,7 @@ describe('LoginComponent', () => {
 
   it('should create a valid login form', () => {
     expect(component.login).toBeDefined(); // check if form is created correctly
-    expect(component.login instanceof FormGroup).toBeTruthy(); // check if form is an instance of formgroud
+    expect(component.login instanceof FormGroup).toBeTruthy(); // check if form is an instance of formgroup
     expect(component.login.get('fname')).toBeDefined(); // check if contain email input
     expect(component.login.get('password')).toBeDefined(); // check if contain password input
   })
