@@ -10,14 +10,12 @@ describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
 
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoginComponent],
+      declarations: [LoginComponent],
       imports: [HttpClientModule, ReactiveFormsModule],
-      providers: [ AuthService, LoginService]
-    })
-    .compileComponents();
+      providers: [AuthService, LoginService],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
@@ -33,7 +31,7 @@ describe('LoginComponent', () => {
     expect(component.login instanceof FormGroup).toBeTruthy(); // check if form is an instance of formgroup
     expect(component.login.get('fname')).toBeDefined(); // check if contain email input
     expect(component.login.get('password')).toBeDefined(); // check if contain password input
-  })
+  });
 
   it('should mark the email and password fields as invalid when they are empty', () => {
     const emailField = component.login.get('fname');
@@ -41,18 +39,18 @@ describe('LoginComponent', () => {
 
     expect(emailField?.invalid).toBeTruthy();
     expect(passwordField?.invalid).toBeTruthy();
-  })
+  });
 
   it('should mark the email and password fields as valid when is provided data to each field', () => {
     const emailField = component.login.get('fname');
     const passwordField = component.login.get('password');
-    
+
     emailField?.setValue('beth@gmail.com');
     passwordField?.setValue('avb%U6Y%vV#tj8');
 
     expect(emailField?.valid).toBeTruthy();
     expect(passwordField?.valid).toBeTruthy();
-  })
+  });
 
   it('should call the logindata method when the form is submitted with valid data', () => {
     spyOn(component, 'logindata');
@@ -63,10 +61,11 @@ describe('LoginComponent', () => {
     emailField?.setValue('beth@gmail.com');
     passwordField?.setValue('avb%U6Y%vV#tj8');
 
-    const formElement: HTMLFormElement = fixture.nativeElement.querySelector('form');
+    const formElement: HTMLFormElement =
+      fixture.nativeElement.querySelector('form');
     formElement.dispatchEvent(new Event('submit'));
     fixture.detectChanges();
 
-    expect(component.logindata).toHaveBeenCalled()
-  })
+    expect(component.logindata).toHaveBeenCalled();
+  });
 });
