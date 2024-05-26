@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/service/auth.service';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
 import { RegistroService } from 'src/app/service/registro.service';
 import Swal from 'sweetalert2';
 
@@ -30,9 +30,8 @@ export class RegistroComponent {
     });
   }
 
-  // Validador personalizado para el campo DNI
-  dniValidator(control: FormControl) {
-    const value = control.value as string;
+  dniValidator(control: AbstractControl) {
+    const value = control.value.toString();
     if (value.length !== 8) {
       return { dniInvalido: true };
     }
