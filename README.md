@@ -6,9 +6,9 @@ Proyecto Grupal para el Módulo Prácticas profesionalizantes del Instituto Supe
 
 ### Repositorios
 
-* Repositorio de la Aplicación Móvil: Este repositorio contiene el código fuente de la aplicación móvil Gym App https://github.com/FrancoGL/ISPC-Mobile.
+* Repositorio de la Aplicación Móvil: Este repositorio contiene el código fuente de la aplicación móvil Gym App https://github.com/Gym-App-ISPC/ISPC-Mobile
 
-* Repositorio de la Aplicación Web: Este repositorio contiene el código fuente del aplicación web Gym App https://github.com/PulpoI/proyecto-integrador-ISPC
+* Repositorio de la Aplicación Web: Este repositorio contiene el código fuente del aplicación web Gym App https://github.com/Gym-App-ISPC/ISPC-practicas
 
 ## Hoja de ruta ✍
 * Actividades preparatorias -  08/04 al 15/04: 
@@ -22,15 +22,17 @@ Registro de Grupos en formulario y documento de presentación proyecto.
 
   
 ## Funciones
-* Registro
-* Informacion de ejercicios
-* Informacion de rutinas
-* Informacion de comidas saludables
+* Registro e inicio de sesión.
+* Informacion de sobre la Empresa.
+* Página de contacto.
+* Panel de administrador.
+* Informacion sobre clases disponibles.
+* Suscripcion a planes.
 
 ### Diseño
-[Diseño de la App Mobile](https://enlace.tld "Diseño de la App Mobile").
+[Diseño de la App Mobile](https://www.figma.com/design/Ffypd8dyo2iawkultBVTmE/Angel-Fit-%E2%80%93-A-Web-Kit-for-Gyms-or-Trainers-(Community)?node-id=0-1&t=nFSESMZbMtfXcqrU-0).
 
-[Diseño de la App Mobile](https://enlace.tld "Diseño de la App Mobile").
+[Diseño de la App Mobile](https://www.figma.com/design/hDZKRtDLs86LMZCJbqkNIY/ISPC-MOBILE?node-id=0-1&t=1HWW42h9OZQwl4XN-0).
 
 ### Wiki 📜
 Pódes encontrar mucho más información sobre este proyecto en nuestra [Wiki](https://github.com/Gym-App-ISPC/ISPC-practicas/wiki).
